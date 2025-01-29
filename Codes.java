@@ -44,18 +44,51 @@ class Codes{
 	}
 }*/
 
-import java.util.Arrays;
-import java.util.Collections;
+// import java.util.Arrays;
+// import java.util.Collections;
 
-class Codes{
-	public static void main(String[] args){
-		Integer arr[] = {10,14,2,23,99};
+// class Codes{
+// 	public static void main(String[] args){
+// 		Integer arr[] = {10,14,2,23,99};
 		
-		Arrays.sort(arr,Collections.reverseOrder());
+// 		Arrays.sort(arr,Collections.reverseOrder());
 		
-		int sum = 0;
-		sum += arr[0] + arr[1];
+// 		int sum = 0;
+// 		sum += arr[0] + arr[1];
 		
-		System.out.println(sum);
-	}
+// 		System.out.println(sum);
+// 	}
+// }
+
+// class Main {
+//     public static void main(String[] args) {
+//         int n = 2342657;
+//         if(n<=1){
+//             System.out.println("Not Prime");
+//             return;
+//         }
+//         for(int i = 2; i < Math.sqrt(n); i++){
+//             if(n%i==0){
+//                 System.out.println("Not Prime");
+//                 return;
+//             }
+//         }
+//         System.out.println("Prime");
+//     }
+// }
+
+class Main {
+    public static void main(String[] args) {
+        int n = 2342657;
+        int c = 2;
+        
+        while(c < Math.sqrt(n)){
+            if(n%c==0){
+                System.out.println("Not Prime");
+                return;
+            }
+            c = c+1;
+        }
+        System.out.println("Prime");
+    }
 }
